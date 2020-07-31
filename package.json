@@ -2,7 +2,7 @@
   "name": "deploy",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Server/server.js",
   "scripts": {
     "test": "node node_modules/nyc/bin/nyc --reporter=text-summary node_modules/mocha/bin/mocha",
     "start": "node Server/server.js",
