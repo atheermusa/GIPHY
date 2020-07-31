@@ -5,8 +5,8 @@
   "main": "Server/server.js",
   "scripts": {
     "test": "node node_modules/nyc/bin/nyc --reporter=text-summary node_modules/mocha/bin/mocha",
-    "start": "node Server/server.js",
-    "start-dev": "nodemon Server/server.js"
+    "start": "cd Server && node server.js",
+    "start-dev": "nodemon server.js"
   },
   "engines": {
     "node": "12.x"
