@@ -87,8 +87,8 @@ server.post('/comments', (req, res) => {
     fs.writeFileSync('data.JSON', data)
 })
 
-// const port = process.env.PORT || 3000;
-// module.exports = server.listen(port, () => console.log(`We are live at http://localhost:${port}`));      
+const port = process.env.PORT || 3000;
+module.exports = server.listen(port, () => console.log(`We are live at http://localhost:${port}`));      
 
-module.exports = server;
+// module.exports = server;
 // ATHEER END //
