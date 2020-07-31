@@ -1,5 +1,13 @@
 /* GENERAL CSS START --------------------------------------------------------------------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+TC:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* #banner {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    color:black;
+    margin: 3rem 1rem 3rem 1rem;
+} */
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
@@ -10,10 +18,9 @@ body {
 
 header {
     text-align: center;
+    width: 100%;
     height: 200px;
-    background: url('https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-    background-position: cover;
-    background-repeat: no-repeat;
+    background-color: rgba(115, 196, 240, 0.591);
     border: 1px solid transparent;
     border-radius: 1rem;
 }
@@ -22,13 +29,7 @@ header {
     color: white;
     font-weight: 800;
     font-size: 5rem;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: rgba(89, 89, 89, 0.112);
-    border: 1px solid transparent;
-    border-radius: 2rem;
-    width: 600px;
-    text-align: center;
+    margin: 3rem 1rem 3rem 1rem;
 }
 
 #formContainer {
@@ -37,11 +38,24 @@ header {
    left: 25%;
 }
 
-#postTitle, #postBody {
+#postTitle {
     width: 50% !important;
     overflow: auto;
+    
     padding: 0.5%;
     margin: 1rem;
+
+    font-family: 'Nanum Gothic', sans-serif
+}
+
+#postBody {
+    overflow: auto;
+    width: 50% !important;
+
+    padding: 0.5%;
+    margin: 1rem !important; 
+
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .postText {
@@ -49,10 +63,10 @@ header {
 }
 
 article {
-    width: 72%;
-    background-color: rgba(20, 165, 191, 0.064);
+    width: 70%;
+    background-color: rgba(20, 165, 191, 0.132);
     padding: 1rem 1rem 0rem 1rem;
-    margin: 50px 0;
+    margin: 1rem;
     border: 1px solid transparent;
     border-radius: 2rem;   
 }
@@ -64,17 +78,9 @@ article img {
 }
 
 article h1 {
-    text-transform: uppercase;
-    font-size: 32px;
+    text-transform: capitalize;
+    font-size: 26px;
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-article p {
-    text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight:100;
-    margin-bottom: 50px;
 }
 
 #postContainer {
@@ -83,6 +89,13 @@ article p {
 }
 
 #addGif {
+    /* width: 6rem;
+    padding: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem; */
     width: 6rem;
     padding: 1rem;
     margin: 0rem 1rem 1rem 1rem;
@@ -90,11 +103,23 @@ article p {
     font-size: 1rem;
     border: none;
     border-radius: 0.2rem;
+    /* align-self: center; */
     position: relative;
-    left: 24%;
-    transform: translateX(-50%);
+    left: 20%;
     
 }
+
+/* #Discard {
+    width: 6rem;
+    background-color: rgb(165, 0, 0);
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0rem 1rem 1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+} */
 
 #Discard, #Post, #Post2 {
     width: 6rem;
@@ -106,25 +131,20 @@ article p {
     border: none;
     border-radius: 0.2rem;
     position: relative;
-    left: 21%;
-    transform: translateX(-50%);
+    left: 12%;
     cursor: pointer;
 }
 
 #Discard {
-    background-color: rgb(155, 30, 2);
+    background-color: rgb(93, 207, 242);
 }
 
 #Post, #Post2 {
-    background-color: rgb(45, 114, 16);
+    background-color: rgb(5, 52, 102);
 }
 
 #gifContainer, #addGifForm {
     margin: 1rem 0rem 1rem 1rem;
-}
-
-#gifContainer {
-    width:1000px;
 }
 
 #titleCount, #bodyCount {
@@ -155,11 +175,19 @@ article p {
 
 #emojiContainer {
     display: flex;
+    /* background-color: white; */
     margin: 0rem;
     justify-content: center;
 }
 
 .smallEmojiContainer {
+    /* display: grid;
+    /* background-color: white; */
+    /* justify-items: center;
+    align-items: center;
+    padding: 0.1rem;
+    height: 3rem;
+    width: 2rem;  */
     display: grid;
     background-color: rgba(255, 255, 255, 0.427);
     justify-items: center;
@@ -171,31 +199,5 @@ article p {
     border: 1px solid transparent;
     border-radius: 50%; 
 }
+}
 /* EMOJI CSS END --------------------------------------------------------------------------------------------------------------------------------------- */
-
-
-/* COMMENT START --------------------------------------------------------------------------------------------------------------------------------------- */
-
-.commentForm, .commentContainer {
-    position: relative;
-    width: 500px;
-    left: 28%;
-}
-
-.commentBtn {
-    position: relative;
-    left: 28%;
-}
-
-.addComment {
-    position: relative;
-    left: -49%;
-}
-
-.commentSubmit {
-    position: relative;
-    left: -28%;
-}
-
-/* COMMENT END --------------------------------------------------------------------------------------------------------------------------------------- */
-
